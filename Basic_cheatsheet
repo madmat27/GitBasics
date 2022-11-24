@@ -11,8 +11,6 @@ git commit -m "My Commit message goes here"
 git commit -a -m "My Commit message goes here" 
 // ^- if we want to add and commit at the same time. ATTN! File must NOT be newly created 
 
-git log: Displays all logs of a repo
-
 git checkout -- <filename>: undo all unstaged changes from this file
 
 git branch: shows all branches of repo
@@ -32,16 +30,17 @@ git push origin <branchname>: push the branch named 'branchname' from local to r
 git push --set-upstream origin <branchname>: you can use 'git push', without declaring the origin explicitly
 git push: push from local to remote repo
 
-git status: check status
+git clone https://github.com/<username>/<repo_name>.git . : clone remote repo to current folder
 
+git fetch: check if there are changes in remote repo, not sync with local repo
+git pull: retrieve changes from remote repo to local
 
 ------------------------------------------------------
 #### STATUS & LOGGING ####
-
-
+git status: check status
+git log: Displays all logs of a repo
 
 ------------------------------------------------------
 #### FILES ####
 .gitignore: used to prevent some files from uploading to our repo. Created manually by us
 README.md: contains instructions about configuration, installation, etc. for our repo
-
