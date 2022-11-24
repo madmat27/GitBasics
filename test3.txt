@@ -1,2 +1,0 @@
-New file in new branch (b1).
-Latest change here (on master).
