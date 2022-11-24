@@ -1,0 +1,33 @@
+#### LOCAL REPOS ####
+git init: Initialize a repo
+
+git config user.name "Name Surname"
+git config user.email "user@gmail.com"
+
+git add . || git add -A: put all files to staging area
+// Must run if file is new!
+
+git commit -m "My Commit message goes here"
+git commit -a -m "My Commit message goes here" 
+// ^- if we want to add and commit at the same time. ATTN! File must NOT be newly created 
+
+git log: Displays all logs of a repo
+
+git checkout -- <filename>: undo all unstaged changes from this file
+
+git branch: shows all branches of repo
+git branch <branchname>: creates new branch, named 'branchname'
+git checkout branchname: to move from current branch (usually master) to the branch named 'branchname'
+
+git merge: merge one branch to another
+git merge <branchname>: if we are on branch 'master', the branch named 'branchname' will be merged with 'master'
+------------------------------------------------------
+#### REMOTE REPOS ####
+
+
+
+------------------------------------------------------
+#### FILES ####
+.gitignore: used to prevent some files from uploading to our repo. Created manually by us
+README.md: contains instructions about configuration, installation, etc. for our repo
+
