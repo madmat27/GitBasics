@@ -21,8 +21,22 @@ git checkout branchname: to move from current branch (usually master) to the bra
 
 git merge: merge one branch to another
 git merge <branchname>: if we are on branch 'master', the branch named 'branchname' will be merged with 'master'
+
 ------------------------------------------------------
 #### REMOTE REPOS ####
+git remote add origin https://github.com/<username>/<repo_name>.git : add remote repo
+git push -u origin master: push from local to remote repo (initialize)
+
+git push origin <branchname>: push the branch named 'branchname' from local to remote repo
+
+git push --set-upstream origin <branchname>: you can use 'git push', without declaring the origin explicitly
+git push: push from local to remote repo
+
+git status: check status
+
+
+------------------------------------------------------
+#### STATUS & LOGGING ####
 
 
 
