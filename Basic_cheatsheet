@@ -44,3 +44,15 @@ git log: Displays all logs of a repo
 #### FILES ####
 .gitignore: used to prevent some files from uploading to our repo. Created manually by us
 README.md: contains instructions about configuration, installation, etc. for our repo
+
+------------------------------------------------------
+------------------------------------------------------
+#### DELETING ALL COMMIT HISTORY ON GIT WITHOUT DELETING REPO ####
+
+1. Checkout: git checkout --orphan latest_branch
+2. Add all the files: git add -A
+3. Commit the changes: git commit -am "commit message"
+4. Delete the branch: git branch -D main
+5. Rename the current branch to main: git branch -m main
+6. Finally, force update the repository: git push -f origin main
+
